@@ -1,0 +1,7 @@
+build/
+lib/
+libfreenect/
+node_modules/
+client/models/
+client/jsm
+client/js

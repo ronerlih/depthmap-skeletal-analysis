@@ -1,0 +1,22 @@
+{
+  "name": "3dskeletal",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --experimental-modules index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "jsdom": "^16.2.2",
+    "three": "^0.115.0",
+    "three.js": "^0.77.1",
+    "websocket-stream": "^5.5.2",
+    "window": "^4.2.7"
+  },
+  "devDependencies": {},
+  "description": ""
+}
