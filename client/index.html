@@ -70,8 +70,9 @@
 
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 1000 );
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
-				camera.position.set( 0, 2,  5 );
-				// camera.lookAt( 0, 1, 0 );
+				renderer.autoClear = false;
+				camera.position.set( 0, 3,  5 );
+				// camera.lookAt( 220, 10, 0 );
 
 				// controls
 
@@ -151,6 +152,8 @@
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				renderer.outputEncoding = THREE.sRGBEncoding;
 				renderer.shadowMap.enabled = true;
+				renderer.autoClear = false;
+				// renderer.autoClearColor = false;
 				container.appendChild( renderer.domElement );
 
 				stats = new Stats();
@@ -171,13 +174,14 @@
 
 				controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
 				controls.dampingFactor = 0.05;
-
 				controls.screenSpacePanning = false;
 
 				// controls.minDistance = 100;
 				// controls.maxDistance = 500;
 
 				controls.maxPolarAngle = Math.PI / 2;
+				controls.target = new THREE.Vector3( 0, 1, 0 );
+
             }
             
             }
@@ -272,7 +276,7 @@
 
 				folder0.open();
 				folder1.open();
-				
+
 				// folder2.open();
 				// folder3.open();
 				// folder4.open();
