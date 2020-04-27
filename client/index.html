@@ -192,7 +192,8 @@
 			function createPanel() {
 
 				var panel = new GUI( { width: 310 } );
-
+				panel.close();
+				
 				var folder1 = panel.addFolder( 'Visibility' );
 				var folder0 = panel.addFolder( 'Avatars' );
 				var folder2 = panel.addFolder( 'Activation/Deactivation' );
@@ -306,6 +307,7 @@
 					};
 
 				} );
+
 
 			}
             function clearAvatars(){
