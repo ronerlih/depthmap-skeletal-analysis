@@ -71,16 +71,19 @@
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 1000 );
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
 				renderer.autoClear = false;
-				camera.position.set( 0, 0,  5 );
+				camera.position.set( 0, 0,  3.5 );
 				// camera.lookAt( 220, 10, 0 );
 
-				// control
-
+				
 				clock = new THREE.Clock();
 
 				scene = new THREE.Scene();
 				scene.background = new THREE.Color( 0xa0a0a0 );
 				scene.fog = new THREE.Fog( 0xa0a0a0, 10, 50 );
+				
+				// axes
+				var axesHelper = new THREE.AxesHelper( 5 );
+				scene.add( axesHelper );
 
 				var hemiLight = new THREE.HemisphereLight( 0xffffff, 0x444444 );
 				hemiLight.position.set( 0, 20, 0 );
