@@ -43,9 +43,10 @@
 
             const models = 
             [
+				// ['./models/Hajj_Man02.fbx', 1],
                 ['./models/gltf/Xbot.glb', 1],
                 ['./models/gltf/Soldier.glb', 1],
-                ['./models/gltf/Monster/glTF/monster.gltf', 0.05],
+                ['./models/gltf/Monster/glTF/Monster.gltf', 0.05],
                 ['./models/gltf/RobotExpressive/RobotExpressive.glb', 0.3],
             ]
 			var scene, renderer, camera, stats;
@@ -186,8 +187,8 @@
 				var panel = new GUI( { width: 310 } );
 
 				var folder1 = panel.addFolder( 'Visibility' );
-				var folder2 = panel.addFolder( 'Activation/Deactivation' );
 				var folder0 = panel.addFolder( 'Avatars' );
+				var folder2 = panel.addFolder( 'Activation/Deactivation' );
 				var folder3 = panel.addFolder( 'Pausing/Stepping' );
 				var folder4 = panel.addFolder( 'Crossfading' );
 				var folder5 = panel.addFolder( 'Blend Weights' );
@@ -271,7 +272,7 @@
 
 				folder0.open();
 				folder1.open();
-				folder2.open();
+				// folder2.open();
 				// folder3.open();
 				// folder4.open();
 				// folder5.open();
