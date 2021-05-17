@@ -1,5 +1,5 @@
 # depthmap-skeletal-analysis
 
-##. skeleton animation sandbox
+## skeleton animation sandbox to interface with live 3D sensor.
 
-### Original reference at: https://threejs.org/examples/?q=sk#webgl_animation_skinning_blending
+### Original rendering reference at: https://threejs.org/examples/?q=sk#webgl_animation_skinning_blending
